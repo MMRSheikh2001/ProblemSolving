@@ -7,13 +7,19 @@ public class IsPalindrome {
 
     public static boolean isPalindrome(String s) {
 
-        String newString = "";
-        for (int i = s.length() - 1; i <= 0; i--) {
+        int start = 0;
+        int end = s.length() - 1;
+        while (start <= end) {
+            if (s.charAt(start) != s.charAt(end)) {
+                return false;
+            }
 
-            newString = newString + s.charAt(i);
+            start++;
+            end--;
+
         }
 
-        return s.equals(newString);
+        return true;
 
     }
 
