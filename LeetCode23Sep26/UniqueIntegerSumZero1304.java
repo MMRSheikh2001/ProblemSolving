@@ -4,7 +4,7 @@ public class UniqueIntegerSumZero1304 {
     }
 }
 
-class Solution {
+private class Solution {
     public int[] sumZero(int n) {
 
         int[] arr = new int[n];
